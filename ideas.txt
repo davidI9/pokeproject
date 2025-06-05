@@ -1,0 +1,4 @@
+Quiero que se almacenen los pokemons a través de gets a la pokeapi, quiero luego para cada pokemon obtener una lista de movimientos, otra de stats otra de habilidades 
+y el sprite principal (que en vd eso con tener la entidad del pokemon sobra)
+
+Contexto: pokeInfo
