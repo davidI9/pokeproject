@@ -1,10 +1,11 @@
 from ..app.repositories.GetPokemonFromApiRepository import GetPokemonFromApiRepository
-from .GetPokemonUrl import GetPokemonUrl
+import httpx
+
 
 class GetPokemonFromApi(GetPokemonFromApiRepository):
     def __init__(self, url):
         self.url = url
     
-    def fetch_pokeapi(url):
-        #fetch
-        return #my fakin json
+    def fetch_pokeapi(self):
+        queried_pokemon = httpx.get(self.url)
+        return queried_pokemon
