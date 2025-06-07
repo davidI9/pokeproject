@@ -1,3 +1,0 @@
-from GetPokemonFromApi import GetPokemonFromApi
-from GetPokemonUrl import GetPokemonUrl
-
