@@ -1,7 +1,7 @@
-from ..app.repositories.GetPokemonUrlRepository import GetPokemonUrlRepository
+from ...app.GetRawPokemon.repositories.GetRawPokemonUrlRepo import GetRawPokemonUrlRepository
 import sqlite3
 
-class GetPokemonUrl(GetPokemonUrlRepository):
+class GetRawPokemonUrl(GetRawPokemonUrlRepository):
     def get_url_by_name(self, name: str) -> str:
         connect = sqlite3.connect("src/pokeInfo/infrastructure/database.sqlite")
         cursor = connect.cursor()
@@ -9,8 +9,8 @@ class GetPokemonUrl(GetPokemonUrlRepository):
         
         response = cursor.fetchone()
         if(response):
-            url = response[0]
+            poke_url = response[0]
             connect.close()
-            return url
+            return poke_url
         else:
             raise RuntimeError("Pokemon query could not be resolved, please ensure you are providing a real pokemon name.")
