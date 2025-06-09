@@ -8,5 +8,5 @@ class GetRawPokemonCommandHandler:
         self.get_raw_pokemon_from_api_repo = get_raw_pokemon_from_api_repo
     
     def handle(self, get_pokemon_command: GetRawPokemonCommand):
-        poke_url = self.get_pokemon_url_repo.get_url_by_name(get_pokemon_command.name)
-        return self.get_pokemon_from_api_repo.fetch_pokeapi(poke_url)
+        poke_url = self.get_raw_pokemon_url_repo.get_url_by_name(get_pokemon_command.name)
+        return self.get_raw_pokemon_from_api_repo.fetch_pokeapi(poke_url)

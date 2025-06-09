@@ -11,4 +11,4 @@ def get_raw_pokemon_info(name: str) -> dict:
     handler = GetRawPokemonCommandHandler(url_repo, api_repo)
     
     queried_pokemon = handler.handle(command)
-    print(type(queried_pokemon))
+    return queried_pokemon

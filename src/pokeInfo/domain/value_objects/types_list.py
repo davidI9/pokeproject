@@ -1,6 +1,6 @@
 class TypesList:
     
-    def __init__(self, types: list):
+    def __init__(self, types: dict):
         self.types = types
     
     def __eq__(self, other):

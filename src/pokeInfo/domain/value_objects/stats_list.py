@@ -1,6 +1,6 @@
 class StatsList:
     
-    def __init__(self, stats: list):
+    def __init__(self, stats: dict):
         self.stats = stats
     
     def __eq__(self, other):

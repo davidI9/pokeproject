@@ -1,6 +1,6 @@
 class MoveList:
     
-    def __init__(self, moves: list):
+    def __init__(self, moves: dict):
         self.moves = moves
     
     def __eq__(self, other):

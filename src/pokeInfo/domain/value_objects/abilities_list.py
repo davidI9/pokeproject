@@ -1,6 +1,6 @@
 class AbilitiesList:
     
-    def __init__(self, abilities: list):
+    def __init__(self, abilities: dict):
         self.abilities = abilities
         
     def __eq__(self, other):
