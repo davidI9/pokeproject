@@ -8,5 +8,3 @@ def get_pokemon_info(name: str) -> Pokemon:
     get_pokemon_info_command_handler = GetPokemonInfoCommandHandler()
     pokemon_info = get_pokemon_info_command_handler.handle(get_pokemon_info_command)
     return pokemon_info
-
-print(get_pokemon_info("pikachu").name)
